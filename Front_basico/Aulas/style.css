@@ -1,20 +1,28 @@
 body{
-    color: red
-
+    color:blue;
+    
 }
 
 .miranha:hover{
     display: none; /* hover - quando o mouse passar pela imagem |none - sumir */
-
 }
+
 .miranha{
+    background-color: bisque;
+    justify-content: center;
     width: 80%;
     height: 80%;
 }
 
+.tabela table{
+    color: brown;
+}
 
 .div_miranha{
-   background-color: blue;
-   width: 500px;
-   height: 500px; 
+    display: flex;
+    background-color: pink;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    height: 500px; 
 }
