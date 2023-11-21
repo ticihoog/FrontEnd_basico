@@ -1,0 +1,5 @@
+Minha branch com minha parte: https://github.com/danssampaio/residencia-tic18-web/tree/FRONT_P002_Tici
+
+Main com a prática completa: https://github.com/danssampaio/residencia-tic18-web/tree/main/semana-2/pratica/feb-p002
+
+A atividade foi feita por mim, Ticiana Hoog e Darley(Dan) Souza.
