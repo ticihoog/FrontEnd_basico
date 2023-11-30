@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Roteiros Turísticos - Formulário</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form-style.css"> 
+</head>
+<body>
+    <div class="container-destinos" id="containerDestinos">
+        
+    </div>
+
+    <hr>
+
+    <div class="formulario-container">
+        <h2>Adicionar Novo Pacote Turístico</h2>
+        <form id="formulario">
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" required>
+
+            <label for="imagem">URL da Imagem:</label>
+            <input type="url" id="imagem" name="imagem" required>
+
+            <label for="duracao">Duração:</label>
+            <input type="text" id="duracao" name="duracao" required>
+
+            <label for="inclusos">Itens Inclusos:</label>
+            <textarea id="inclusos" name="inclusos" required></textarea>
+
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco" name="preco" required>
+
+            <button type="button" onclick="inserirPacote()">Inserir Pacote</button>
+        </form>
+    </div>
+
+    <script src="./assets/js/form-script.js"></script> 
+</body>
+</html>
