@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Kanit:ital,wght@0,200;1,100&family=Quicksand:wght@300&family=Vina+Sans&display=swap');
+
+body {
+    font-family: 'Glass Antiqua', cursive;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container-destinos {
+    width: 60%;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 33.33%);
+    justify-items: center;
+}
+
+.roteiros-viagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    padding: 8%;
+    height: auto;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #E5D4FF;
+    color: #742DB7;
+    box-shadow: 2px 3px #c1afde;
+    position: relative;
+}
+
+.roteiro-incluso {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+
+.roteiro-incluso li::before {
+    content: "\2714";
+    margin-right: 8px;
+    color: #742DB7;
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+.roteiro-preco,
+.roteiro-destino {
+    font-weight: bold;
+    padding-block: 5%;
+}
+
+.roteiros-viagens img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 6px;
+    margin-bottom: 5%;
+    box-shadow: 1px 1px #c1afde;
+}
+
+.roteiros-viagens img:hover{
+    z-index: 1;
+}
+
+.roteiro-comprar {
+    position: relative;
+    background-color: #8FD429;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px #c1afde;
+    margin-block: 5%;
+    padding: 8px;
+    transition-duration: .3s;
+}
+
+.roteiro-comprar:active {
+    transform: scaleY(1.15);
+    transition: transform .2s;
+}
+
+.roteiro-comprar:hover {
+    cursor: pointer;
+    background-color: #79c20c;
+}
+
+@media screen and (max-width: 600px) {
+    .roteiros-viagens {
+        width: 100%;
+        margin-block: 15px;
+    }
+
+    .container-destinos {
+        grid-template-columns: auto;
+    }
+}

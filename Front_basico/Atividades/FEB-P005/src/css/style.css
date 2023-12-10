@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2? família ? & família - & família & display-swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #690c0c;
+    font-family: 'Vina Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    padding: 30px;
+}
+
+.container-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    grid-gap: 5px;
+    padding-top: 10px;
+    padding-inline: 5px;
+}
+
+.menu {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu a,
+ul {
+    text-decoration: none;
+    color: black;
+    font-family: 'Glass Antiqua', cursivo;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: rgb(210, 86, 86);
+}
+
+.navbar {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.noticias {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.noticias a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.noticias-int {
+    overflow-x: auto;
+    white-space: nowrap;
+    max-height: 150px;
+    padding-inline: 10px;
+}
+
+.noticias-int-int {
+    background-color: rgb(92, 90, 176);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    margin-block-end: 15px;
+    padding-inline: 5px;
+}
+
+.noticias-int-int:hover {
+    background-color: rgb(147, 74, 74);
+}
+
+.destaque {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-height: 207px;
+}
+
+.destaque-int {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* 
+Coloquei a imagem em 100% pois 100px ficaria muito pequena */
+
+.destaque-int img {
+    width: 100%;
+    padding-block: 10px;
+    padding-inline: 10px;
+}
+
+.destaque-int-int {
+    margin-block-end: 10px;
+    padding-inline: 10px;
+}
+
+
+.container-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 5px;
+    padding-top: 10px;
+    padding-inline: 5px;
+}
+
+.servicos {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.servicos-int {
+    text-decoration: none;
+    height: 200px;
+}
+
+.resultados {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.resultados-int {
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .container-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-int {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaque-int img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        /* Adicionando espaço entre as imagens */
+    }
+}
